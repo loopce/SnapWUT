@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
-        Parse.setApplicationId("=============================",
-            clientKey: "==============================")
+        Parse.setApplicationId("lTO9IlqffmzFQg2CSYJmztwxXJHrdqfy3Y2TDjFw",
+            clientKey: "uRmo415JVcJi5cF9EZfH5216VyDQJRK6ZXVKuyt7")
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
         // Override point for customization after application launch.

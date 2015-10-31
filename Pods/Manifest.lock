@@ -25,6 +25,7 @@ PODS:
     - FBSDKCoreKit (~> 4.7)
     - FBSDKLoginKit (~> 4.7)
     - Parse (~> 1.9)
+  - SwiftForms (1.0.2)
 
 DEPENDENCIES:
   - FBSDKCoreKit
@@ -32,6 +33,7 @@ DEPENDENCIES:
   - FBSDKShareKit
   - Parse
   - ParseFacebookUtilsV4
+  - SwiftForms
 
 SPEC CHECKSUMS:
   Bolts: 0e9bce58b9b9f5e8a7a4d47b16d2fabec289072b
@@ -40,5 +42,6 @@ SPEC CHECKSUMS:
   FBSDKShareKit: 213adf63e073f41a346b0e7a689805880dc5150e
   Parse: 54a965c8c19a6dde90284ab654dbcc77ef8c001b
   ParseFacebookUtilsV4: aadebfaaaf4a45bf0a0992863bf48c8fc49189e3
+  SwiftForms: c439aca9cf462383a1292c028bd14915de42bf6b
 
 COCOAPODS: 0.39.0

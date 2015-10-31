@@ -9,6 +9,7 @@ target 'SnapWUT' do
     pod 'FBSDKLoginKit'
     pod 'FBSDKShareKit'
     pod 'ParseFacebookUtilsV4'
+    pod 'SwiftForms'
 end
 
 target 'SnapWUTTests' do

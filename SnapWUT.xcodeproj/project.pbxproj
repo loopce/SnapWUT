@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		356D74821BE5674C00E6F012 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356D74811BE5674C00E6F012 /* RegistrationViewController.swift */; };
 		35ED15911BE53DD600872BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED15901BE53DD600872BA8 /* AppDelegate.swift */; };
-		35ED15931BE53DD600872BA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED15921BE53DD600872BA8 /* ViewController.swift */; };
+		35ED15931BE53DD600872BA8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED15921BE53DD600872BA8 /* LoginViewController.swift */; };
 		35ED15961BE53DD600872BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35ED15941BE53DD600872BA8 /* Main.storyboard */; };
 		35ED15981BE53DD600872BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35ED15971BE53DD600872BA8 /* Assets.xcassets */; };
 		35ED159B1BE53DD600872BA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35ED15991BE53DD600872BA8 /* LaunchScreen.storyboard */; };
@@ -36,9 +37,10 @@
 
 /* Begin PBXFileReference section */
 		1522CBB63471546C0EFE09CF /* Pods-SnapWUT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapWUT.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapWUT/Pods-SnapWUT.release.xcconfig"; sourceTree = "<group>"; };
+		356D74811BE5674C00E6F012 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		35ED158D1BE53DD600872BA8 /* SnapWUT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapWUT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35ED15901BE53DD600872BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		35ED15921BE53DD600872BA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		35ED15921BE53DD600872BA8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		35ED15951BE53DD600872BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35ED15971BE53DD600872BA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35ED159A1BE53DD600872BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -116,7 +118,8 @@
 			children = (
 				35F0F3501BE5422300878B19 /* SnapWUT-Bridging-Header.h */,
 				35ED15901BE53DD600872BA8 /* AppDelegate.swift */,
-				35ED15921BE53DD600872BA8 /* ViewController.swift */,
+				35ED15921BE53DD600872BA8 /* LoginViewController.swift */,
+				356D74811BE5674C00E6F012 /* RegistrationViewController.swift */,
 				35ED15941BE53DD600872BA8 /* Main.storyboard */,
 				35ED15971BE53DD600872BA8 /* Assets.xcassets */,
 				35ED15991BE53DD600872BA8 /* LaunchScreen.storyboard */,
@@ -334,7 +337,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35ED15931BE53DD600872BA8 /* ViewController.swift in Sources */,
+				356D74821BE5674C00E6F012 /* RegistrationViewController.swift in Sources */,
+				35ED15931BE53DD600872BA8 /* LoginViewController.swift in Sources */,
 				35ED15911BE53DD600872BA8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
