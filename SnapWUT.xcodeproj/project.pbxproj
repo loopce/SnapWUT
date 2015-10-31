@@ -14,6 +14,7 @@
 		35ED159B1BE53DD600872BA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35ED15991BE53DD600872BA8 /* LaunchScreen.storyboard */; };
 		35ED15A61BE53DD600872BA8 /* SnapWUTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED15A51BE53DD600872BA8 /* SnapWUTTests.swift */; };
 		35ED15B11BE53DD600872BA8 /* SnapWUTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED15B01BE53DD600872BA8 /* SnapWUTUITests.swift */; };
+		C4002DA0B33399067882C946 /* Pods_SnapWUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9BA860140DCF758BF671B8 /* Pods_SnapWUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1522CBB63471546C0EFE09CF /* Pods-SnapWUT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapWUT.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapWUT/Pods-SnapWUT.release.xcconfig"; sourceTree = "<group>"; };
 		35ED158D1BE53DD600872BA8 /* SnapWUT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapWUT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35ED15901BE53DD600872BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35ED15921BE53DD600872BA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,9 @@
 		35ED15AC1BE53DD600872BA8 /* SnapWUTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapWUTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35ED15B01BE53DD600872BA8 /* SnapWUTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapWUTUITests.swift; sourceTree = "<group>"; };
 		35ED15B21BE53DD600872BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35F0F3501BE5422300878B19 /* SnapWUT-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SnapWUT-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		3A9BA860140DCF758BF671B8 /* Pods_SnapWUT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapWUT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D6EA1E79A11F94DCE911EE0 /* Pods-SnapWUT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapWUT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapWUT/Pods-SnapWUT.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4002DA0B33399067882C946 /* Pods_SnapWUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32BDBF97F421967421CA5886 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D6EA1E79A11F94DCE911EE0 /* Pods-SnapWUT.debug.xcconfig */,
+				1522CBB63471546C0EFE09CF /* Pods-SnapWUT.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		35ED15841BE53DD600872BA8 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +96,8 @@
 				35ED15A41BE53DD600872BA8 /* SnapWUTTests */,
 				35ED15AF1BE53DD600872BA8 /* SnapWUTUITests */,
 				35ED158E1BE53DD600872BA8 /* Products */,
+				32BDBF97F421967421CA5886 /* Pods */,
+				9B8B26C93EE13D63929567C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +114,7 @@
 		35ED158F1BE53DD600872BA8 /* SnapWUT */ = {
 			isa = PBXGroup;
 			children = (
+				35F0F3501BE5422300878B19 /* SnapWUT-Bridging-Header.h */,
 				35ED15901BE53DD600872BA8 /* AppDelegate.swift */,
 				35ED15921BE53DD600872BA8 /* ViewController.swift */,
 				35ED15941BE53DD600872BA8 /* Main.storyboard */,
@@ -125,6 +143,14 @@
 			path = SnapWUTUITests;
 			sourceTree = "<group>";
 		};
+		9B8B26C93EE13D63929567C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A9BA860140DCF758BF671B8 /* Pods_SnapWUT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35ED15B51BE53DD600872BA8 /* Build configuration list for PBXNativeTarget "SnapWUT" */;
 			buildPhases = (
+				A443259D10454050C95BC990 /* Check Pods Manifest.lock */,
 				35ED15891BE53DD600872BA8 /* Sources */,
 				35ED158A1BE53DD600872BA8 /* Frameworks */,
 				35ED158B1BE53DD600872BA8 /* Resources */,
+				B023CF444FAFC47A2284D9FA /* Embed Pods Frameworks */,
+				00E92A4BFCA7FF47AEEAACE8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +222,7 @@
 				TargetAttributes = {
 					35ED158C1BE53DD600872BA8 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 86MG9KVY7T;
 					};
 					35ED15A01BE53DD600872BA8 = {
 						CreatedOnToolsVersion = 7.1;
@@ -250,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00E92A4BFCA7FF47AEEAACE8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapWUT/Pods-SnapWUT-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A443259D10454050C95BC990 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B023CF444FAFC47A2284D9FA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapWUT/Pods-SnapWUT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		35ED15891BE53DD600872BA8 /* Sources */ = {
@@ -397,23 +475,36 @@
 		};
 		35ED15B61BE53DD600872BA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D6EA1E79A11F94DCE911EE0 /* Pods-SnapWUT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = "Pods/**";
 				INFOPLIST_FILE = SnapWUT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loopce.SnapWUT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SnapWUT-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		35ED15B71BE53DD600872BA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1522CBB63471546C0EFE09CF /* Pods-SnapWUT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = "Pods/**";
 				INFOPLIST_FILE = SnapWUT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loopce.SnapWUT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SnapWUT-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -484,6 +575,7 @@
 				35ED15B71BE53DD600872BA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35ED15B81BE53DD600872BA8 /* Build configuration list for PBXNativeTarget "SnapWUTTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +584,7 @@
 				35ED15BA1BE53DD600872BA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35ED15BB1BE53DD600872BA8 /* Build configuration list for PBXNativeTarget "SnapWUTUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +593,7 @@
 				35ED15BD1BE53DD600872BA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
