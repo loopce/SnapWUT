@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		353108511BE67E360018CC73 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353108501BE67E360018CC73 /* Util.swift */; };
+		353108531BE6D2670018CC73 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353108521BE6D2670018CC73 /* MainViewController.swift */; };
 		356D74821BE5674C00E6F012 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356D74811BE5674C00E6F012 /* RegistrationViewController.swift */; };
 		35ED15911BE53DD600872BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED15901BE53DD600872BA8 /* AppDelegate.swift */; };
 		35ED15931BE53DD600872BA8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED15921BE53DD600872BA8 /* LoginViewController.swift */; };
@@ -37,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		1522CBB63471546C0EFE09CF /* Pods-SnapWUT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapWUT.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapWUT/Pods-SnapWUT.release.xcconfig"; sourceTree = "<group>"; };
+		353108501BE67E360018CC73 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		353108521BE6D2670018CC73 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		356D74811BE5674C00E6F012 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		35ED158D1BE53DD600872BA8 /* SnapWUT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapWUT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35ED15901BE53DD600872BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 				35ED15901BE53DD600872BA8 /* AppDelegate.swift */,
 				35ED15921BE53DD600872BA8 /* LoginViewController.swift */,
 				356D74811BE5674C00E6F012 /* RegistrationViewController.swift */,
+				353108521BE6D2670018CC73 /* MainViewController.swift */,
+				353108501BE67E360018CC73 /* Util.swift */,
 				35ED15941BE53DD600872BA8 /* Main.storyboard */,
 				35ED15971BE53DD600872BA8 /* Assets.xcassets */,
 				35ED15991BE53DD600872BA8 /* LaunchScreen.storyboard */,
@@ -340,6 +346,8 @@
 				356D74821BE5674C00E6F012 /* RegistrationViewController.swift in Sources */,
 				35ED15931BE53DD600872BA8 /* LoginViewController.swift in Sources */,
 				35ED15911BE53DD600872BA8 /* AppDelegate.swift in Sources */,
+				353108511BE67E360018CC73 /* Util.swift in Sources */,
+				353108531BE6D2670018CC73 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

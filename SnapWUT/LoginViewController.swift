@@ -24,11 +24,11 @@ class LoginViewController: UIViewController {
         PFFacebookUtils.logInInBackgroundWithReadPermissions(["email", "user_about_me", "public_profile", "user_friends"])
             { (user : PFUser?, error : NSError?) -> Void in
                 if user != nil {
-                    self.performSegueWithIdentifier("registration", sender: nil)
+                    self.performSegueWithIdentifier("login", sender: nil)
                 } else if let e = error {
                     NSLog("Error: %@", e)
                 } else {
-                    NSLog("We don't have a user and we don't have an error.")
+                    NSLog("We don't have an user and we don't have an error.")
                 }
         }
     }

@@ -91,6 +91,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-SnapWUT/Parse.framework"
   install_framework "Pods-SnapWUT/ParseFacebookUtilsV4.framework"
   install_framework "Pods-SnapWUT/SwiftForms.framework"
+  install_framework "Pods-SnapWUT/SwiftOverlays.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-SnapWUT/Bolts.framework"
@@ -100,4 +101,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-SnapWUT/Parse.framework"
   install_framework "Pods-SnapWUT/ParseFacebookUtilsV4.framework"
   install_framework "Pods-SnapWUT/SwiftForms.framework"
+  install_framework "Pods-SnapWUT/SwiftOverlays.framework"
 fi

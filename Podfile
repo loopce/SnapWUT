@@ -10,6 +10,7 @@ target 'SnapWUT' do
     pod 'FBSDKShareKit'
     pod 'ParseFacebookUtilsV4'
     pod 'SwiftForms'
+    pod 'SwiftOverlays'
 end
 
 target 'SnapWUTTests' do
