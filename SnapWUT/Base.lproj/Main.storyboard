@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to SnapWUT!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIO-Zq-6Ex">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to SnapWUT!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIO-Zq-6Ex">
                                 <rect key="frame" x="174" y="114" width="253" height="21"/>
                                 <animations/>
                                 <constraints>
@@ -58,6 +58,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-188" y="397"/>
+        </scene>
+        <!--Send Snap View Controller-->
+        <scene sceneID="vcR-uw-dzL">
+            <objects>
+                <tableViewController id="KCg-3O-h1q" customClass="SendSnapViewController" customModule="SnapWUT" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="LgD-wg-t2c">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="EI6-JA-Xzs">
+                                <rect key="frame" x="0.0" y="114" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EI6-JA-Xzs" id="h8V-m5-IbN">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KCg-3O-h1q" id="nDY-H2-JTU"/>
+                            <outlet property="delegate" destination="KCg-3O-h1q" id="DTc-gc-lWS"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a8U-bm-odo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2092" y="-249"/>
         </scene>
         <!--User Profile-->
         <scene sceneID="TPT-a5-JFD">
@@ -123,6 +154,11 @@
                                 <segue destination="Z4V-2Q-xaX" kind="show" id="qEX-CP-pFe"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="camera" id="0JM-2E-gKn">
+                            <connections>
+                                <segue destination="KCg-3O-h1q" kind="show" identifier="sendSnap" id="ome-2D-Tia"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="Z4V-2Q-xaX" kind="show" identifier="registrationNoAnimation" animates="NO" id="jaM-dy-8ME"/>
@@ -151,6 +187,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera" width="26" height="23"/>
         <image name="profile" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>

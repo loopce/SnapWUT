@@ -10,13 +10,14 @@ import Foundation
 
 class MainViewController: UITableViewController {
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
         if let user = PFUser.currentUser() {
             if (user.isNew) {
                 self.performSegueWithIdentifier("registrationNoAnimation", sender: nil)
             }
         }
-        super.viewDidLoad()
     }
     
 }
