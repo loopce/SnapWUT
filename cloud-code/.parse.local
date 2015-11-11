@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "SnapWUT": {
+      "applicationId": "lTO9IlqffmzFQg2CSYJmztwxXJHrdqfy3Y2TDjFw"
+    },
+    "_default": {
+      "link": "SnapWUT"
+    }
+  }
+}

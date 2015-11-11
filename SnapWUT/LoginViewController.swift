@@ -18,8 +18,11 @@ class LoginViewController: UIViewController {
 
     @IBAction func pressLoginWithFacebook(sender: UIButton) {
         PFFacebookUtils.logInInBackgroundWithReadPermissions(["email", "user_about_me", "public_profile", "user_friends"])
-            { (user : PFUser?, error : NSError?) -> Void in
-                if user != nil {
+            { (userOptional : PFUser?, error : NSError?) -> Void in
+                if let user = userOptional {
+                    let installation = PFInstallation.currentInstallation()
+                    installation.setObject(user, forKey: "user")
+                    installation.saveInBackground()
                     self.performSegueWithIdentifier("login", sender: nil)
                 } else if let e = error {
                     NSLog("Error: %@", e)
