@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'SnapWUT' do
     pod 'Parse'
+    pod 'ParseUI'
     pod 'FBSDKCoreKit'
     pod 'FBSDKLoginKit'
     pod 'FBSDKShareKit'

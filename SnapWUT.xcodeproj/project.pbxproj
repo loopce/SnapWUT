@@ -11,6 +11,7 @@
 		353108531BE6D2670018CC73 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353108521BE6D2670018CC73 /* MainViewController.swift */; };
 		356D74821BE5674C00E6F012 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356D74811BE5674C00E6F012 /* RegistrationViewController.swift */; };
 		3570F9AC1BF0496D00626892 /* SendSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3570F9AB1BF0496D00626892 /* SendSnapViewController.swift */; };
+		358DC6951BF2814D00FFAF70 /* DisplayImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358DC6941BF2814D00FFAF70 /* DisplayImageViewController.swift */; };
 		35ED15911BE53DD600872BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED15901BE53DD600872BA8 /* AppDelegate.swift */; };
 		35ED15931BE53DD600872BA8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED15921BE53DD600872BA8 /* LoginViewController.swift */; };
 		35ED15961BE53DD600872BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35ED15941BE53DD600872BA8 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		353108521BE6D2670018CC73 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		356D74811BE5674C00E6F012 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		3570F9AB1BF0496D00626892 /* SendSnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendSnapViewController.swift; sourceTree = "<group>"; };
+		358DC6941BF2814D00FFAF70 /* DisplayImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayImageViewController.swift; sourceTree = "<group>"; };
 		35ED158D1BE53DD600872BA8 /* SnapWUT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapWUT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35ED15901BE53DD600872BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35ED15921BE53DD600872BA8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				353108521BE6D2670018CC73 /* MainViewController.swift */,
 				353108501BE67E360018CC73 /* Util.swift */,
 				3570F9AB1BF0496D00626892 /* SendSnapViewController.swift */,
+				358DC6941BF2814D00FFAF70 /* DisplayImageViewController.swift */,
 				35ED15941BE53DD600872BA8 /* Main.storyboard */,
 				35ED15971BE53DD600872BA8 /* Assets.xcassets */,
 				35ED15991BE53DD600872BA8 /* LaunchScreen.storyboard */,
@@ -347,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				356D74821BE5674C00E6F012 /* RegistrationViewController.swift in Sources */,
+				358DC6951BF2814D00FFAF70 /* DisplayImageViewController.swift in Sources */,
 				35ED15931BE53DD600872BA8 /* LoginViewController.swift in Sources */,
 				35ED15911BE53DD600872BA8 /* AppDelegate.swift in Sources */,
 				353108511BE67E360018CC73 /* Util.swift in Sources */,

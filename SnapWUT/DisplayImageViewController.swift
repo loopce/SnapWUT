@@ -1,0 +1,53 @@
+//
+//  DisplayImageViewController.swift
+//  SnapWUT
+//
+//  Created by Daniel Sandoval on 11/10/15.
+//  Copyright © 2015 Loop CE. All rights reserved.
+//
+
+import Foundation
+
+class DisplayImageViewController: UIViewController {
+    
+    @IBOutlet var imageView: UIImageView!
+    
+    @IBOutlet weak var secondsLabel: UILabel!
+    
+    var image: UIImage?
+    
+    var seconds = 5
+    
+    var timer : NSTimer?
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        showTimer()
+        self.setNeedsStatusBarAppearanceUpdate()
+        self.imageView.image = image
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewDidAppear(animated: Bool)
+    {
+        super.viewDidAppear(animated)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self,
+            selector: Selector("fireTimer"), userInfo: nil, repeats: true)
+    }
+    
+    func fireTimer()
+    {
+        seconds--
+        showTimer()
+        if (seconds <= 0) {
+            timer?.invalidate()
+            self.dismissViewControllerAnimated(false, completion: nil)
+        }
+    }
+    
+    func showTimer()
+    {
+        secondsLabel.text = String(format: "%02d", arguments: [seconds])
+    }
+    
+}
