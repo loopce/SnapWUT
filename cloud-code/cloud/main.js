@@ -17,7 +17,8 @@ Parse.Cloud.afterSave("Snap", function(request) {
 			  Parse.Push.send({
 			    where: pushQuery, // Set our Installation query
 			    data: {
-			      alert: "You've got a new snap from " + user.get('username')
+			      alert: "You've got a new snap from " + user.get('username'),
+			      sound: "default"
 			    }
 			  }, {
 			    success: function() {

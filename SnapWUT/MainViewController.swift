@@ -139,8 +139,10 @@ class MainViewController: PFQueryTableViewController {
                 if let secs = snapToDisplay?.objectForKey("seconds") as? Int {
                     displayController.seconds = secs
                 }
-                snapToDisplay?.setObject(true, forKey: "seen")
-                snapToDisplay?.saveInBackground()
+                if let snap = snapToDisplay where !userIsSenderOfSnap(snap) {
+                        snap.setObject(true, forKey: "seen")
+                        snap.saveInBackground()
+                }
         }
     }
     

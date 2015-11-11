@@ -27,7 +27,7 @@ class LoginViewController: UIViewController {
                 } else if let e = error {
                     NSLog("Error: %@", e)
                 } else {
-                    NSLog("We don't have an user and we don't have an error.")
+                    NSLog("User cancelled login.")
                 }
         }
     }

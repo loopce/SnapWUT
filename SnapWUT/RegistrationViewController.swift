@@ -44,7 +44,7 @@ class RegistrationViewController : FormViewController
             self.fillUserInfo()
             
             if (user.isNew) {
-                self.showWaitOverlay()
+                SwiftOverlays.showBlockingWaitOverlay()
                 // Get user information from Facebook
                 let requestParams = ["fields" : "name,email"]
                 FBSDKGraphRequest(graphPath: "me", parameters: requestParams).startWithCompletionHandler()
@@ -59,7 +59,7 @@ class RegistrationViewController : FormViewController
                                     user.username = username
                                 }
                                 self.fillUserInfo()
-                                self.removeAllOverlays()
+                                SwiftOverlays.removeAllBlockingOverlays()
                                 self.saveUser()
                             }
                         } else {
@@ -82,7 +82,7 @@ class RegistrationViewController : FormViewController
     
     func updateInfoAndSaveUser()
     {
-        self.showWaitOverlay()
+        SwiftOverlays.showBlockingWaitOverlay()
         self.user?.email = self.valueForTag("email") as? String
         if let username = self.valueForTag("username") as? String {
             if (self.user?.username != username) {
@@ -97,11 +97,11 @@ class RegistrationViewController : FormViewController
                             self.setValue(self.user?.username, forTag: "username")
                         }
                         self.saveUser()
-                        self.removeAllOverlays()
+                        SwiftOverlays.removeAllBlockingOverlays()
                 }
             } else {
                 self.saveUser()
-                self.removeAllOverlays()
+                SwiftOverlays.removeAllBlockingOverlays()
             }
         }
     }

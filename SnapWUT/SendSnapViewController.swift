@@ -9,6 +9,7 @@
 import Foundation
 import MobileCoreServices
 import SwiftForms
+import SwiftOverlays
 
 class SendSnapViewController : FormViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate
 {
@@ -114,11 +115,11 @@ class SendSnapViewController : FormViewController, UIImagePickerControllerDelega
         } else if let toUsername = self.valueForTag("username") as? String,
                     let seconds = self.valueForTag("seconds"),
                     let image = self.image {
-            self.showWaitOverlay()
+            SwiftOverlays.showBlockingWaitOverlay()
             self.getUser(toUsername) { (toUserOptional: PFUser?, error: NSError?) -> Void in
                 if error != nil {
                     self.displayAlert("Error", message: "An error occurred while trying to send Snap.", completion: nil)
-                    self.removeAllOverlays()
+                    SwiftOverlays.removeAllBlockingOverlays()
                 } else if let toUser = toUserOptional {
                     let scaledImg = image.resizeToLargestSize(1000.0)
                     if let imgData = UIImageJPEGRepresentation(scaledImg, 0.8),
@@ -133,22 +134,22 @@ class SendSnapViewController : FormViewController, UIImagePickerControllerDelega
                                     snap.setObject(false, forKey: "seen")
                                     snap.saveInBackgroundWithBlock() { (saved: Bool, _) -> Void in
                                         if (saved) {
-                                            self.removeAllOverlays()
+                                            SwiftOverlays.removeAllBlockingOverlays()
                                             self.navigationController?.popViewControllerAnimated(true)
                                         } else {
                                             self.displayAlert("Error", message: "Error while sending Snap. Please try again.", completion: nil)
-                                            self.removeAllOverlays()
+                                            SwiftOverlays.removeAllBlockingOverlays()
                                         }
                                     }
                                 } else {
                                     self.displayAlert("Error", message: "Error while sending Snap. Please try again.", completion: nil)
-                                    self.removeAllOverlays()
+                                    SwiftOverlays.removeAllBlockingOverlays()
                                 }
                             }
                     }
                 } else {
                     self.displayAlert("Error", message: "This user doesn't exist!", completion: nil)
-                    self.removeAllOverlays()
+                    SwiftOverlays.removeAllBlockingOverlays()
                 }
             }
         } else {

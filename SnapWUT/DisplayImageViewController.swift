@@ -41,7 +41,9 @@ class DisplayImageViewController: UIViewController {
         showTimer()
         if (seconds <= 0) {
             timer?.invalidate()
-            self.dismissViewControllerAnimated(false, completion: nil)
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.dismissViewControllerAnimated(false, completion: nil)
+            })
         }
     }
     
